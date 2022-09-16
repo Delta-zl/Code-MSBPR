@@ -34,7 +34,7 @@ public class msbpr
     // number of items
 	public static int m = 4989; 
 	// number of iterations
-	public static int num_iterations = 100000; 
+	public static int num_iterations = 80000; 
     
     // Input threshold
     public static int threshold_c = 4;        // item popularity threshold
