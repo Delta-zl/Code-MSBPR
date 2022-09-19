@@ -1178,6 +1178,7 @@ public class msbpr
 	{
 		float pre_total_loss = 0f;
 		float total_loss = 0f;
+	System.out.println("training...");
         for (int iter = 1; iter <= num_iterations; iter++)
         {
 		for (int iter_rand = 1; iter_rand <= n; iter_rand++)
@@ -1224,12 +1225,12 @@ public class msbpr
 				total_loss += train_ipcj(Size_Iu_j, Iu_j, Size_Iu_p, Iu_p, Size_Iu_c, Iu_c, u, i);    // [1]
 			}
 		}
-		if (iter % 100 == 0) {
-			total_loss = -total_loss / (float) n / (float) 100;
-			System.out.println("iter " + iter + ", total_loss: " + total_loss);
-			pre_total_loss = total_loss;
-			total_loss = 0f;
-		} 
+// 		if (iter % 100 == 0) {
+// 			total_loss = -total_loss / (float) n / (float) 100;
+// 			System.out.println("iter " + iter + ", total_loss: " + total_loss);
+// 			pre_total_loss = total_loss;
+// 			total_loss = 0f;
+// 		} 
         }
 	}
 	// =============================================================
