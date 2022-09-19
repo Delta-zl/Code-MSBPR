@@ -23,9 +23,9 @@ public class msbpr
     // top k in evaluation
 	public static int topK = 5;
 	// regularization parameter
-	public static float alpha_u = 0.01f;
-    public static float alpha_v = 0.01f;
-    public static float beta_v = 0.01f;
+	public static float alpha_u = 0.1f;
+    public static float alpha_v = 0.1f;
+    public static float beta_v = 0.1f;
     // learning rate 
     public static float gamma = 0.01f;
     
@@ -53,13 +53,13 @@ public class msbpr
     public static String fnSimilarity_i_u = "D:/Java/MBPR/similarity_matrix/30music/similarity_i_u.txt";  // hybrid similarity
   		
 	// select the similarity calculation method(true is selected, false is not selected)
-	public static boolean flagsimilarity_i = false; 
+	public static boolean flagsimilarity_i = true; 
 	public static boolean flagsimilarity_u = false; 
 	public static boolean flagsimilarity_i_u = false;
 	
 	// select the split method(true is selected, false is not selected) 
-	public static boolean flagsplit_i = false;
-	public static boolean flagsplit_u = true;
+	public static boolean flagsplit_i = true;
+	public static boolean flagsplit_u = false;
 	public static boolean flagsplit_i_u = false;
 		
 	// valid & test
